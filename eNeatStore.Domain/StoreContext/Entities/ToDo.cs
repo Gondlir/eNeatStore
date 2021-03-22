@@ -5,7 +5,9 @@ namespace eNeatStore.Domain.StoreContext.Entities
         //Criar entidades
         //Definir função das entidades 
         //Preencher as regras de negócio necessárias para as entidades
-
+        /*
+       *** loja de livros *** 
+        */
 
     }
 }
