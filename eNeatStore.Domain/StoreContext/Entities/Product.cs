@@ -18,5 +18,10 @@ namespace eNeatStore.Domain.StoreContext.Entities
         public decimal Price { get; private set; }
         public decimal Quantity { get; private set; }
         public string ItemCatalog { get; private set; }
+
+        public override string ToString()
+        {
+            return Title;
+        }
     }
 }
