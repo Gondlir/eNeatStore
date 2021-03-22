@@ -12,11 +12,11 @@ namespace eNeatStore.Domain.StoreContext.Entities
             Addres = addres;
         }
 
-        public string Name { get; set; }
-        public string Email { get; set; }
-        public string Document { get; set; }
-        public string PhoneNumber { get; set; }
-        public string Addres { get; set; }
+        public string Name { get; private set; }
+        public string Email { get; private set; }
+        public string Document { get; private set; }
+        public string PhoneNumber { get; private set; }
+        public string Addres { get; private set; }
 
         public override string ToString()
         {
