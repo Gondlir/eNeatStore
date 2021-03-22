@@ -2,7 +2,7 @@ namespace eNeatStore.Domain.StoreContext.Enums
 {
     public enum EDeliveryStatus
     {
-        Wating = 0,
+        Waiting = 0,
         Send = 1,
         OnTheWay = 2,
         Arrived = 3,
