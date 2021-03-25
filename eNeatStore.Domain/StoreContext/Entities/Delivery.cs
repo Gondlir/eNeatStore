@@ -5,7 +5,7 @@ namespace eNeatStore.Domain.StoreContext.Entities
 {
     public class Delivery
     {
-        public Delivery(EDeliveryStatus deliveryStatus, DateTime createdDate, DateTime estimatedDate)
+        public Delivery(DateTime estimatedDate)
         {
             DeliveryStatus = EDeliveryStatus.Waiting;
             CreatedDate = DateTime.Now;

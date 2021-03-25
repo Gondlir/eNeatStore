@@ -2,14 +2,13 @@ namespace eNeatStore.Domain.StoreContext.Entities
 {
     public class Product
     {
-        public Product(string title, string description, string image, decimal price, decimal quantity, string itemCatalog)
+        public Product(string title, string description, string image, decimal price, decimal quantity)
         {
             Title = title;
             Description = description;
             Image = image;
             Price = price;
             Quantity = quantity;
-            ItemCatalog = itemCatalog;
         }
 
         public string Title { get; private set; }
@@ -17,11 +16,14 @@ namespace eNeatStore.Domain.StoreContext.Entities
         public string Image { get; private set; }
         public decimal Price { get; private set; }
         public decimal Quantity { get; private set; }
-        public string ItemCatalog { get; private set; }
 
         public override string ToString()
         {
             return Title;
+        }
+        public void LowerQuantity(decimal quantity)
+        {
+            Quantity -= quantity;
         }
     }
 }
